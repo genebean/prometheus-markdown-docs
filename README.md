@@ -22,3 +22,22 @@ Ever wanted to generate docs about your Prometheus metrics programmatically? If 
 - `vmpooler_ondemandrequest_generate_success` (counter): Ondemand request succeeded
 - `vmpooler_poolreset_invalid` (counter): Pool reset counter Invalid Pool
 ```
+
+The above looks like this rendered:
+
+- `vmpooler_checkout_empty` (counter): Pool checkout counts checkout failed - no machine
+- `vmpooler_checkout_invalid` (counter): Pool checkout counts checkout failed - invalid template
+- `vmpooler_checkout_nonresponsive` (counter): Pool checkout counts checkout failed - non responsive machine
+- `vmpooler_checkout_success` (counter): Pool checkout counts successful checkout
+- `vmpooler_config_invalid` (counter): vmpooler pool configuration request Invalid
+- `vmpooler_delete_failed` (counter): Delete machine failed
+- `vmpooler_delete_success` (counter): Delete machine succeeded
+- `vmpooler_http_exceptions` (counter): The total number of exceptions raised by the Rack application.
+- `vmpooler_http_request_duration_seconds` (histogram): The HTTP response duration of the Rack application.
+- `vmpooler_http_requests_vm` (counter): Total number of HTTP request/sub-operations handled by the Rack application under the /vm endpoint
+- `vmpooler_http_requests` (counter): The total number of HTTP requests handled by the Rack application.
+- `vmpooler_ondemandrequest_fail_invalid` (counter): Ondemand request failure invalid poolname
+- `vmpooler_ondemandrequest_fail_toomanyrequests` (counter): Ondemand request failure too many requests
+- `vmpooler_ondemandrequest_generate_duplicaterequests` (counter): Ondemand request failed duplicate request
+- `vmpooler_ondemandrequest_generate_success` (counter): Ondemand request succeeded
+- `vmpooler_poolreset_invalid` (counter): Pool reset counter Invalid Pool
